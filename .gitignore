@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+*.egg-info/
+cache/
+outputs/
+logs/
+# Generated from GATED FLORES+ (CC BY-SA 4.0) — regenerate with scripts/build_eval_set.py; do not redistribute
+data/eval/*.jsonl
+.venv/
+data/regen/

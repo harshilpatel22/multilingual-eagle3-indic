@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eagle3-multilingual"
+version = "0.0.1"
+description = "Local-prep tooling for cross-lingual EAGLE-3 (Indic) speculative decoding"
+requires-python = ">=3.11"
+dependencies = [
+  "datasets>=2.19",
+  "huggingface_hub>=0.23",
+  "transformers>=4.51",
+  "tokenizers>=0.19",
+  "pandas>=2.0",
+  "numpy>=1.26",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

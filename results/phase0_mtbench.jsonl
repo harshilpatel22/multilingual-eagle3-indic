@@ -1,0 +1,41 @@
+{
+    "model": "Tengyunw/qwen3_8b_eagle3",
+    "mtbench": [
+        {
+            "batch_size": 1,
+            "steps": 0,
+            "topk": 0,
+            "num_draft_tokens": 0,
+            "metrics": [
+                {
+                    "latency": 422.9707169048488,
+                    "output_throughput": 146.11886244102186,
+                    "accept_length": 1.0,
+                    "accuracy": null,
+                    "num_questions": 20,
+                    "num_valid_predictions": 0,
+                    "categorical_performance": null
+                }
+            ],
+            "num_samples": 20
+        },
+        {
+            "batch_size": 1,
+            "steps": 3,
+            "topk": 1,
+            "num_draft_tokens": 4,
+            "metrics": [
+                {
+                    "latency": 219.63150291889906,
+                    "output_throughput": 282.03148991277914,
+                    "accept_length": 2.5885081487672377,
+                    "accuracy": null,
+                    "num_questions": 20,
+                    "num_valid_predictions": 0,
+                    "categorical_performance": null
+                }
+            ],
+            "num_samples": 20
+        }
+    ]
+}
